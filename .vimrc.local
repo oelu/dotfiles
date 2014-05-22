@@ -1,0 +1,48 @@
+" " Start python on F5
+autocmd FileType python map <F5> :w<CR>:!/usr/local/bin/python2.7 -i "%"<CR>
+" " Start bash on F5
+autocmd FileType sh map <F5> :w<CR>:!bash "%"<CR>
+"
+set background=dark
+colorscheme solarized
+
+" start out files with all folds opened
+" autocmd Syntax * normal zR
+let g:DisableAutoPHPFolding = 1"
+"
+" show hidden files, such as dotfiles
+let g:ctrlp_show_hidden = 1"
+
+""set rnu
+set number
+
+"" pymode options
+""" default options
+let g:pymode_options = 1
+""" doc
+let g:pymode_doc = 1
+let g:pymode_doc_bind = 'K'
+
+""" 100% cpu problem"
+set lazyredraw
+
+""" syntastic options"
+""aggregate errors from all syntax checkers
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_always_populate_loc_list = 1
+
+" from python guide"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_auto_loc_list=1
+let g:syntastic_loc_list_height=3
+
+" what checkers should syntastic use"
+let g:syntastic_python_checkers = ['pylint', 'pep8', 'python', 'pyflakes']
+
+" mapleader as comma
+let mapleader = "," 
+
+" temporary disable autoindent for copy and paste"
+set pastetoggle=<leader>p
