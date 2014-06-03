@@ -1,7 +1,3 @@
-" " Start python on F5
-autocmd FileType python map <F5> :w<CR>:!/usr/local/bin/python2.7 -i "%"<CR>
-" " Start bash on F5
-autocmd FileType sh map <F5> :w<CR>:!bash "%"<CR>
 "
 set background=dark
 colorscheme solarized
@@ -35,7 +31,7 @@ let g:syntastic_always_populate_loc_list = 1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_auto_loc_list=1
+"let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height=3
 
 " what checkers should syntastic use"
@@ -46,3 +42,7 @@ let mapleader = ","
 
 " temporary disable autoindent for copy and paste"
 set pastetoggle=<leader>p
+
+autocmd FileType python map <leader>r :w<CR>:!/usr/local/bin/python2.7"%"<CR>
+autocmd FileType python map <leader>ri :w<CR>:!/usr/local/bin/python2.7 -i "%"<CR>
+autocmd FileType sh map <leader>r :w<CR>:!bash "%"<CR>
