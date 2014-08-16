@@ -46,3 +46,6 @@ set pastetoggle=<leader>p
 autocmd FileType python map <leader>r :w<CR>:!/usr/local/bin/python2.7"%"<CR>
 autocmd FileType python map <leader>ri :w<CR>:!/usr/local/bin/python2.7 -i "%"<CR>
 autocmd FileType sh map <leader>r :w<CR>:!bash "%"<CR>
+
+" Map ,, to Escape Key
+imap ,, <ESC>
