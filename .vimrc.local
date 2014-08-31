@@ -22,6 +22,9 @@ let g:pymode_doc_bind = 'K'
 """ 100% cpu problem"
 set lazyredraw
 
+""" go "
+Plugin 'fatih/vim-go'
+
 """ syntastic options"
 ""aggregate errors from all syntax checkers
 let g:syntastic_aggregate_errors = 1
@@ -46,10 +49,9 @@ set pastetoggle=<leader>p
 autocmd FileType python map <leader>r :w<CR>:!/usr/local/bin/python2.7"%"<CR>
 autocmd FileType python map <leader>ri :w<CR>:!/usr/local/bin/python2.7 -i "%"<CR>
 autocmd FileType sh map <leader>r :w<CR>:!bash "%"<CR>
-<<<<<<< HEAD
+
+" Copy and Paste does sometimes not work"
+set mouse=
 
 " Map ,, to Escape Key
 imap ,, <ESC>
-=======
-autocmd FileType lua map <leader>r :w<CR>:!lua "%"<CR>
->>>>>>> ac1f7c39a8c55918b119f253d9bade2fb474b5eb
