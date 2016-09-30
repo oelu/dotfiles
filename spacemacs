@@ -299,6 +299,10 @@ you should place your code here."
   ;; Inspired by: http://doc.norang.ca/org-mode.html
   ;; Custom Key Bindings
   (global-set-key (kbd "<f12>") 'org-agenda)
+  ;; Custom TODO States
+  (setq org-todo-keywords
+        (quote ((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)")
+                (sequence "WAITING(w)" "HOLD(h)" "|" "CANCELLED(c)" "PHONE" "MEETING"))))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
