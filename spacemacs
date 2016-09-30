@@ -26,6 +26,8 @@ values."
      auto-completion
      better-defaults
      ;; emacs-lisp
+     (osx :variables
+          osx-use-option-as-meta nil)
      git
      markdown
      org
