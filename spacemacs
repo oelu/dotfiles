@@ -45,7 +45,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(elpy)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(org-bullets org-repo-todo)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -294,6 +294,8 @@ you should place your code here."
   ;; CMD key to input special characters.
   ;; SOURCE: https://github.com/syl20bnr/spacemacs/tree/master/layers/osx
   (setq-default mac-right-option-modifier nil)
+  ;; enable python elpy
+  (elpy-enable)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
