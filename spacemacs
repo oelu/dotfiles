@@ -279,7 +279,8 @@ you should place your code here."
     )
   ;; Make it active
   (ad-activate 'org-insert-todo-heading)
-
+  (setq org-agenda-files (list "~/Dropbox/orgmode/GTD.org"
+                               "~/Dropbox/orgmode/todo.org"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
