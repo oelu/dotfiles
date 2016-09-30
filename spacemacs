@@ -285,9 +285,15 @@ you should place your code here."
                                "~/Dropbox/orgmode/todo.org"))
   ;; https://github.com/syl20bnr/spacemacs/issues/5188
   ;; Insert for special characters with meta key (ALT)
-  (if (spacemacs/system-is-mac)
-      (setq mac-command-modifier 'meta
-            mac-option-modifier  'none))
+  ;; (if (spacemacs/system-is-mac)
+  ;;    (setq mac-command-modifier 'meta
+  ;;          ;; mac-option-modifier  'none
+  ;;          default-input-method "MacOSX"))
+
+  ;; NOTE: This configuration allows to use the right CMD key for copy and paste and the left
+  ;; CMD key to input special characters.
+  ;; SOURCE: https://github.com/syl20bnr/spacemacs/tree/master/layers/osx
+  (setq-default mac-right-option-modifier nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
