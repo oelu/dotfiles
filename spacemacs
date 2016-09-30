@@ -296,6 +296,9 @@ you should place your code here."
   (setq-default mac-right-option-modifier nil)
   ;; enable python elpy
   (elpy-enable)
+  ;; Inspired by: http://doc.norang.ca/org-mode.html
+  ;; Custom Key Bindings
+  (global-set-key (kbd "<f12>") 'org-agenda)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
