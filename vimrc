@@ -109,3 +109,7 @@ set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
 autocmd BufNewFile,BufRead *.rs set filetype=rust
 " " Start cargo run on F5
 autocmd FileType rs map <F5> :w<CR>:!cargo run "%"<CR>
+
+" Remap fd for <ESC>
+" Source: http://vim.wikia.com/wiki/Avoid_the_escape_key
+imap fd <Esc>
