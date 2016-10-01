@@ -294,8 +294,10 @@ you should place your code here."
   ;; CMD key to input special characters.
   ;; SOURCE: https://github.com/syl20bnr/spacemacs/tree/master/layers/osx
   (setq-default mac-right-option-modifier nil)
+
   ;; enable python elpy
   (elpy-enable)
+
   ;; Inspired by: http://doc.norang.ca/org-mode.html
   ;; Custom Key Bindings
   (global-set-key (kbd "<f12>") 'org-agenda)
@@ -313,6 +315,7 @@ you should place your code here."
                 ("TODO" ("WAITING") ("CANCELLED") ("HOLD"))
                 ("NEXT" ("WAITING") ("CANCELLED") ("HOLD"))
                 ("DONE" ("WAITING") ("CANCELLED") ("HOLD")))))
+
   ;; Agenda Setup
   ;; See, http://orgmode.org/manual/Storing-searches.html#Storing-searches for all options.
   (setq org-agenda-custom-commands
@@ -321,6 +324,13 @@ you should place your code here."
           ("w" todo "WAITING")
          )
         )
+
+  ;; Store orgmode capture TODO's in the GTD file, section Inbox
+  ;; Source: https://www.suenkler.info/docs/emacs-orgmode/
+  (setq org-capture-templates
+        '(("t" "TODO" entry (file+headline "~/Dropbox/orgmode/GTD.org" "Inbox")
+           "* TODO %? \n:PROPERTIES:\n:CREATED: %U\n:END:")
+           ))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
