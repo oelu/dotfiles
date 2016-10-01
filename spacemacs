@@ -330,7 +330,15 @@ you should place your code here."
   (setq org-capture-templates
         '(("t" "TODO" entry (file+headline "~/Dropbox/orgmode/GTD.org" "Inbox")
            "* TODO %? \n:PROPERTIES:\n:CREATED: %U\n:END:")
-           ))
+          ;; Create Todo under GTD.org -> Work -> Tasks
+          ;; file+olp specifies to full path to fill the Template
+          ("w" "Work TODO" entry (file+olp "~/Dropbox/orgmode/GTD.org" "Work" "Tasks")
+           "* TODO %? \n:PROPERTIES:\n:CREATED: %U\n:END:")
+        ;; Create Todo under GTD.org -> Private -> Tasks
+        ;; file+olp specifies to full path to fill the Template
+        ("p" "Private TODO" entry (file+olp "~/Dropbox/orgmode/GTD.org" "Private" "Tasks")
+         "* TODO %? \n:PROPERTIES:\n:CREATED: %U\n:END:")
+        ))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
