@@ -35,11 +35,14 @@ values."
      (shell :variables
              shell-default-height 30
              shell-default-position 'bottom)
+     shell-scripts
      (spell-checking :variables
                      spell-checking-enable-auto-dictionary t)
      ;; oeluconfig
      ;; syntax-checking
      ;; version-control
+     eyebrowse
+     emacs-lisp
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
