@@ -1,3 +1,4 @@
+;; -*- mode: emacs-lisp -*-
 (defun dotspacemacs/layers ()
   (setq-default
    dotspacemacs-distribution 'spacemacs
@@ -146,6 +147,7 @@
         '(
           ("n" todo "NEXT")
           ("w" todo "WAITING")
+          ("d" "Agenda + Next Actions" ((agenda) (todo "NEXT")))
           )
         )
 
