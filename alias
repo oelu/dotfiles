@@ -1,0 +1,10 @@
+# aliases
+
+# network
+alias pg="ping www.google.ch -c 1"
+alias hosts="sudo vim /etc/hosts"
+alias netdiscover="sudo netdiscover"
+alias tcpdump="sudo tcpdump"
+
+# help
+alias c="cheat"
