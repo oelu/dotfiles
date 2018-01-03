@@ -6,5 +6,19 @@ alias hosts="sudo vim /etc/hosts"
 alias netdiscover="sudo netdiscover"
 alias tcpdump="sudo tcpdump"
 
+# adjust display resolution if in notebook mode
+alias displaynb="xrandr --output Virtual1 --scale 0.5x0.5.~"
+
 # help
 alias c="cheat"
+
+# hackthebox
+alias hackbox='sudo openvpn $HOME/hackthebox.eu/vpn/thrawnos.ovpn'
+
+# enumeration
+
+alias nmapfull='sudo nmap -vv -Pn -A -sC -sS -T 4 -p-'
+
+function dirbcommon(){
+    dirb $1 /usr/share/wordlists/dirb/common.txt
+}
