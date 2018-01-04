@@ -18,6 +18,7 @@ alias hackbox='sudo openvpn $HOME/hackthebox.eu/vpn/thrawnos.ovpn'
 # enumeration
 
 alias nmapfull='sudo nmap -vv -Pn -A -sC -sS -T 4 -p-'
+alias nmapudp='sudo nmap -sU'
 
 function dirbcommon(){
     dirb $1 /usr/share/wordlists/dirb/common.txt
