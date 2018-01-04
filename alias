@@ -7,7 +7,7 @@ alias netdiscover="sudo netdiscover"
 alias tcpdump="sudo tcpdump"
 
 # adjust display resolution if in notebook mode
-alias displaynb="xrandr --output Virtual1 --scale 0.5x0.5.~"
+alias displaynb="xrandr --output Virtual1 --scale 0.7x0.7.~"
 
 # help
 alias c="cheat"
