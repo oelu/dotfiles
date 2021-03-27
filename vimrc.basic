@@ -1,0 +1,33 @@
+filetype on
+
+
+" general vim options
+syntax on
+set number
+set foldmethod=indent
+set foldlevel=99
+let mapleader = "," 
+set tabstop=4
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+set shiftround
+
+" Bash options
+" " Start bash on F5
+autocmd FileType sh map <F5> :w<CR>:!bash "%"<CR>
+
+" copy / yank problem inside tmux"
+" http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
+if $TMUX == ''
+        set clipboard+=unnamed
+endif
+
+" powerline 
+set laststatus=2
+set encoding=utf-8 " Necessary to show Unicode glyphs
+set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+
+" Remap fd for <ESC>
+" Source: http://vim.wikia.com/wiki/Avoid_the_escape_key
+imap fd <Esc>
