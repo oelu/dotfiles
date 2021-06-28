@@ -13,7 +13,7 @@ alias displaynb="xrandr --output Virtual1 --scale 0.7x0.7.~"
 alias c="cheat"
 
 # colorls
-alias ls="colorls -G"
+# alias ls="colorls -G"
 
 # hackthebox
 alias hackbox='sudo openvpn $HOME/hackthebox.eu/vpn/thrawnos.ovpn'
