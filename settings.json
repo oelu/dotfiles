@@ -1,0 +1,21 @@
+// $HOME/.config/Code/User/settings.json
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.fontSize": 16,
+    "yaml.customTags": [
+        "!encrypted/pkcs1-oaep scalar",
+        "!vault scalar"
+    ],
+    "vim.insertModeKeyBindings": [
+    {
+      "before": ["f", "d"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "redhat.telemetry.enabled": false,
+  "ansible.validate.executablePath": "ansible-lint"
+}
